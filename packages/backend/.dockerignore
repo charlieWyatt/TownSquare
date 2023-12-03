@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+.env
+*.log
+dist
+.dockerignore
+Dockerfile
+docker-compose.yml
+yarn.lock
+*.tsbuildinfo
+*.pid
+*.seed
+public
+prisma/migrations
