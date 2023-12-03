@@ -1,4 +1,4 @@
-type User = {
+export type User = {
     id: string;
     username: string;
     name: string;
@@ -8,5 +8,3 @@ type User = {
     website: string;
     birthDate: Date;
 };
-
-export default User;

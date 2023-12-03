@@ -5,7 +5,7 @@ type User = {
   avatar: string;
 };
 
-export type Tweet = {
+export type TweetType = {
   id: string;
   user: User;
   content: string;

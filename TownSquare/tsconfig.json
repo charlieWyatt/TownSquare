@@ -2,7 +2,10 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "lib": ["dom", "es2017"],
+    "lib": [
+      "dom",
+      "es2017"
+    ],
     "jsx": "react-native",
     "outDir": "./build",
     "rootDir": "./",
@@ -26,9 +29,26 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsxImportSource": "react",
-    "types": ["jest", "node", "react", "react-native", "react-dom"],
-    "typeRoots": ["./node_modules/@types", "./src/types"]
+    "types": [
+      "jest",
+      "node",
+      "react",
+      "react-native",
+      "react-dom"
+    ],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/types"
+    ]
   },
-  "include": ["./src/**/*"],
-  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ],
+  "extends": "expo/tsconfig.base"
 }

@@ -18,7 +18,7 @@ class AuthService {
     return this.currentUser;
   }
 
-  public async register(email: string, password: string, name: string): Promise<User | null> {
+  public async signup(email: string, password: string, name: string): Promise<User | null> {
     // TODO: Implement registration logic with API call
     return this.currentUser;
   }
