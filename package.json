@@ -1,0 +1,20 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "install": "yarn install",
+    "start": "yarn workspace backend start"
+  },
+  "dependencies": {
+    "prisma": "^2.30.0",
+    "trpc": "^9.14.0",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.2",
+    "ts-node": "^10.2.1"
+  }
+}

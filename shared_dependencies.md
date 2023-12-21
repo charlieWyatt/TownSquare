@@ -1,33 +1,23 @@
-1. React and React Native: All the .tsx files will share these dependencies as they are used to build the user interface of the app.
+1. "yarn": Yarn is a package manager that will be used across all the files for managing dependencies. It is referenced in "package.json" and "yarn.lock".
 
-2. Expo: This is used for the development environment and is shared across all files.
+2. "prisma": Prisma is an open-source database toolkit. It is used in "prisma/.env", "prisma/schema.prisma", "packages/backend/src/prisma.ts", and "packages/backend/docker-compose.yml".
 
-3. TypeScript: All the .ts and .tsx files share this dependency as the app is written in TypeScript.
+3. "trpc": tRPC is a framework for building typesafe APIs, and it is used in "packages/backend/src/trpc.ts".
 
-4. Tweet and User: These are data schemas that will be shared across multiple files such as "Tweet.tsx", "UserProfile.tsx", "Feed.tsx", "PostTweet.tsx", and their respective service and type files.
+4. "postgresql": PostgreSQL is a powerful, open source object-relational database system. It is used in "prisma/.env", "prisma/schema.prisma", and "packages/backend/docker-compose.yml".
 
-5. Navigation: This component will be used across multiple screens to navigate between them.
+5. "auth.ts": This file is likely to contain authentication logic and is referenced in "packages/backend/src/index.ts".
 
-6. HomeScreen, ProfileScreen, NotificationsScreen, MessagesScreen, SearchScreen, PostScreen: These are the names of the different screens in the app and will be used in the Navigation component and in the index file.
+6. "createContext": This is a function that is likely used to create a context for the backend. It is used in "packages/backend/src/utils/createContext.ts".
 
-7. API, Auth, Tweet, User: These are service files that will be used across multiple components and screens to handle API calls, authentication, and data management.
+7. "Docker": Docker is a platform to develop, ship, and run applications. It is used in "packages/backend/docker-compose.yml", "packages/backend/.dockerignore", and "packages/backend/Dockerfile".
 
-8. Format and Validate: These utility functions will be used across multiple files for data formatting and validation.
+8. "backend": This is the name of the package that contains the backend code. It is used in "packages/backend/package.json", "packages/backend/tsconfig.json", "packages/backend/.env".
 
-9. Icons and Images: These assets will be used across multiple screens and components for UI elements.
+9. "index.ts": This is the main entry point for the backend package. It is used in "packages/backend/src/index.ts".
 
-10. Package.json: This file will contain all the dependencies shared across all files.
+10. "schema.prisma": This file defines the data schema for Prisma. It is used in "prisma/schema.prisma".
 
-11. Tsconfig.json: This file will contain the TypeScript configuration shared across all TypeScript files.
+11. "package.json": This file is used to manage the dependencies of the project. It is used in "package.json" and "packages/backend/package.json".
 
-12. App.json: This file will contain the configuration for the Expo app, shared across all files.
-
-13. App.tsx: This is the main entry point of the app and will import and use components, screens, services, and utilities.
-
-14. Index.tsx: This file will be used to export components, screens, services, and utilities for easy import in other files.
-
-15. DOM Element IDs: These will be used in the JavaScript functions to manipulate the DOM. They will be shared across multiple files.
-
-16. Message Names: These will be used for communication between different parts of the app and will be shared across multiple files.
-
-17. Function Names: These will be used across multiple files to perform specific tasks.
+12. "tsconfig.json": This file is used to specify the root files and the compiler options required to compile the project. It is used in "packages/backend/tsconfig.json".
